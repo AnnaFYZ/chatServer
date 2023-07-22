@@ -31,7 +31,7 @@ const messages = [
 ];
 
 app.get("/", function (request, response) {
-  response.sendFile(__dirname + "/index.html");
+  response.send("https://chat-server-static.onrender.com/");
 });
 
 app.get("/messages", (req, res) => {
